@@ -1,4 +1,4 @@
-﻿#if NET461 || NETCOREAPP2_0 || NETCOREAPP3_0
+﻿#if NET461 || NETCOREAPP2_0 || NETCOREAPP3_0 || NETCOREAPP3_1
 using NUnit.Framework;
 using System;
 using System.Collections.Generic;

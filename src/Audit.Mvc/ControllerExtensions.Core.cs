@@ -1,4 +1,4 @@
-﻿#if NETCOREAPP3_0 || NETSTANDARD2_1 || NETSTANDARD2_0 || NETSTANDARD1_6 || NET451
+﻿#if NETCOREAPP3_1 || NETCOREAPP3_0 || NETSTANDARD2_1 || NETSTANDARD2_0 || NETSTANDARD1_6 || NET451
 using Audit.Core;
 
 namespace Audit.Mvc
@@ -15,7 +15,7 @@ namespace Audit.Mvc
             return AuditAttribute.GetCurrentScope(controller.HttpContext);
         }
 
-#if NETCOREAPP3_0 || NETSTANDARD2_1 || NETSTANDARD2_0
+#if NETCOREAPP3_1 || NETCOREAPP3_0 || NETSTANDARD2_1 || NETSTANDARD2_0
         /// <summary>
         /// Gets the current Audit Scope.
         /// </summary>

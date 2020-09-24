@@ -1,4 +1,4 @@
-#if NETCOREAPP3_0 || NETSTANDARD2_1 || NETSTANDARD2_0
+#if NETCOREAPP3_1 || NETCOREAPP3_0 || NETSTANDARD2_1 || NETSTANDARD2_0
 using Microsoft.AspNetCore.Mvc.Filters;
 #endif
 using System.Collections.Generic;
@@ -54,7 +54,7 @@ namespace Audit.Mvc
         [JsonExtensionData]
         public Dictionary<string, object> CustomFields { get; set; } = new Dictionary<string, object>();
 
-#if NETCOREAPP3_0 || NETSTANDARD2_1 || NETSTANDARD2_0
+#if NETCOREAPP3_1 || NETCOREAPP3_0 || NETSTANDARD2_1 || NETSTANDARD2_0
         //
         [JsonIgnore]
         internal PageHandlerExecutingContext PageHandlerExecutingContext { get; set; }

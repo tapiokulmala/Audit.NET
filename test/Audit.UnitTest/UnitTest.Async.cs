@@ -540,7 +540,7 @@ namespace Audit.UnitTest
             provider.Verify(p => p.InsertEvent(It.IsAny<AuditEvent>()), Times.Exactly(1));
         }
 
-#if NETCOREAPP2_0 || NETCOREAPP3_0
+#if NETCOREAPP2_0 || NETCOREAPP3_0 || NETCOREAPP3_1
         [Test]
         public async Task Test_Dispose_Async()
         {

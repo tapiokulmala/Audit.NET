@@ -11,10 +11,10 @@
   
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <!--#if (EnableEntityFramework)-->
-    <DefineConstants>DEBUG;EnableEntityFramework;NETCOREAPP;NETCOREAPP3_0</DefineConstants>
+    <DefineConstants>DEBUG;EnableEntityFramework;NETCOREAPP;NETCOREAPP3_0;NETCOREAPP3_1</DefineConstants>
     <!--#endif-->
     <!--#if (Swagger)-->
-    <DefineConstants>DEBUG;Swagger;NETCOREAPP;NETCOREAPP3_0</DefineConstants>
+    <DefineConstants>DEBUG;Swagger;NETCOREAPP;NETCOREAPP3_0;NETCOREAPP3_1</DefineConstants>
     <!--#endif-->
     <NoWarn>1701;1702;CS1591</NoWarn>
   </PropertyGroup>
